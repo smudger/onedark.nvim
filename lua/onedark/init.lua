@@ -133,6 +133,14 @@ local highlights = {
   { hg = 'GitSignsDelete', fg = colors.red },
 }
 
+-- Fix HTML highlighting in Neovim 0.8+
+-- Note, this colorscheme should probably define a lot more for Treesitter but this is the bare minimum to fix a particularly ugly issue.
+if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
+  table.insert(highlights, { hg = '@tag', fg = colors.purple })
+  table.insert(highlights, { hg = '@tag.attribute', fg = colors.red })
+  table.insert(highlights, { hg = '@tag.delimiter', fg = colors.blue })
+end
+
 M.colorscheme = function()
   local highlight_cmds = {}
   for idx = 1, #highlights do
