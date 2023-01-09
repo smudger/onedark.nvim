@@ -14,11 +14,11 @@ local colors = {
   foreground = '#CAD3F5',
   background = '#24273A',
   comment_grey = '#6E738D',
-  gutter_fg_grey = '#4B5263',
+  gutter_fg_grey = '#6E738D',
   cursor_grey = '#1E2030',
   visual_grey = '#181926',
   menu_grey = '#181926',
-  special_grey = '#3B4048',
+  special_grey = '#24273A',
   vertsplit = '#181926',
 }
 
