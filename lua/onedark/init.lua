@@ -15,11 +15,11 @@ local colors = {
   background = '#24273A',
   comment_grey = '#5C6370',
   gutter_fg_grey = '#4B5263',
-  cursor_grey = '#F4DBD6',
-  visual_grey = '#3E4452',
-  menu_grey = '#3E4452',
+  cursor_grey = '#1E2030',
+  visual_grey = '#181926',
+  menu_grey = '#181926',
   special_grey = '#3B4048',
-  vertsplit = '#3E4452',
+  vertsplit = '#181926',
 }
 
 local highlights = {
